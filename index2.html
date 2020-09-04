@@ -1,43 +1,118 @@
 <!DOCTYPE html>
 
 <style>
+#center-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding-bottom: 20px;
+}
+.text-align-center {text-align: center;
+                    padding-top: 25px;
+                    }
 
+button {border-radius: 5px;
+        border-style: solid;
+        font-size: 15px;
+        border-color: white;
+        border-width: 1px;
+        height: auto;
+        padding: 10px;
+        width: 140px;
+        color:#595959;
+}
+
+ul {list-style-type: none;
+    margin: none;
+    border: none;
+}
+
+li {display: inline;
+    padding: 15px;}
+
+.search-bar {font-size: 30px; 
+            width: 550px; 
+            border-radius: 20px; 
+            border-width: 0.5px; 
+            border-style: solid;
+            border-color: lightgrey;
+
+}
+.align-top{
+                margin-top: 0%;
+
+}
+.body-container {position: relative;
+                padding-top: 200px;}
+
+.footer-container {background-color: #dbdbdb;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    display: inline;
+                    font-size: 15px;         
+}
+
+.header-container {background-color: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 95%;
+                    display: inline;
+                    font-size: 15px;
+}
+
+
+}
 </style>
 
 <body>
-    <header><!--Header Bar, left and right sections-->
+    <header class="header-container"><!--Header Bar, left and right sections-->
         <div>
             <ul>
-                <li><href target="#blank">About</href></li>
-                <li><href target="blank">Store</href></li>
-            </ul>
-            <ul>
-                <li><href target="blank">Gmail</href></li>
-                <li><href target="blank">Images</href></li>
-                <li><!-- 3/3 grid --></li>
-                <li><!-- Sign in Button --></li>
+                <a style="float: left;">
+                    <li><href target="#blank">About</href></li>
+                    <li><href target="#blank">Store</href></li>
+                </a>
+                <a style="float: right;">
+                    <li><href target="blank">Gmail</href></li>
+                    <li><href target="blank">Images</href></li>
+                    <li><!-- 3/3 grid --></li>
+                    <li><!-- Sign in Button --></li>
+                </a>
              </ul>
          </div>
     </header>
-
-    <div> <!--Body, including images, text boxes and search buttons-->
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-        <input type="blank">
+    <div class="body-container"> <!--Logo-->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"
+            id="center-logo">
+            <div class="text-align-center">  <!--Text box-->
+            <input type="blank" class="search-bar">
+            </div>
+            
+            <!--Buttons-->
+            <div class="text-align-center">
+            
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
+            </div>
+                <div style="text-align: center; font-size: 15px; padding-top: 10px; color: blue;">
+        <a href target="#blank">Helpful tips to avoid COVID-19 scams</a>
+                </div>
     </div>
-
-    <footer><!--Footer Bar, left and right sections-->
+    <footer class="footer-container"><!--Footer Bar, left and right sections-->
         <div>
-            <ul>
+            <ul style="padding: 0px 10px 10px 10px">
+                <a style ="float: left;">
                 <li><href target="#blank">Advertising</href></li>
                 <li><href target="#blank">Business</href></li>
                 <li><href target="#blank">How Search works</href></li>
-            </ul>
-            <ul>
+            </a>
+                <a style ="float: right;">
                 <li><href target="#blank">Privacy</href></li>
                 <li><href target="#blank">Terms</href></li>
                 <li><href target="blank">Settings</href></li>
+            </a>
             </ul>
         </div>
     </footer>
