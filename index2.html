@@ -12,7 +12,8 @@
                     padding-top: 25px;
                     }
 
-button {border-radius: 5px;
+button {font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
         border-style: solid;
         font-size: 15px;
         border-color: white;
@@ -20,7 +21,7 @@ button {border-radius: 5px;
         height: auto;
         padding: 10px;
         width: 140px;
-        color:#595959;
+        color: black;
 }
 
 ul {list-style-type: none;
@@ -29,7 +30,9 @@ ul {list-style-type: none;
 }
 
 li {display: inline;
-    padding: 15px;}
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;}
 
 .search-bar {font-size: 30px; 
             width: 550px; 
@@ -53,9 +56,7 @@ li {display: inline;
                     display: inline;
                     font-size: 15px;
 }
-
-
-.footer-container {background-color: #dbdbdb;
+.footer-container {background-color: #f2f2f2;
                     position: absolute;
                     bottom: 0;
                     width: 100%;
@@ -63,10 +64,10 @@ li {display: inline;
                     font-size: 15px;         
 }
 
-#header-image-sizes {height: 30px;
-                width: 30px;
+#header-image-sizes {height: 20px;
+                width: 20px;
                 position: relative;
-                top: 0;
+                top: 5px;
 }
 </style>
 
@@ -81,10 +82,10 @@ li {display: inline;
                 <a style="float: right;">
                     <li><href target="blank">Gmail</href></li>
                     <li><href target="blank">Images</href></li>
-                    <li><img src="/Users/austinhan/Desktop/the_odin_project/google-homepage/3x3icon.png"
-                        alt="3x3 grid icon" id="header-image-size"></li>
-                    <li><img src="/Users/austinhan/Desktop/the_odin_project/google-homepage/personal-icon.png" 
-                        alt="Personal letter icon" id="header-image-size"><!-- Sign in Button --></li>
+                    <li><img src="icons/3x3icon.png"
+                        alt="3x3 grid icon" id="header-image-sizes"></li>
+                    <li><img src="icons/personal-icon.png" 
+                        alt="Personal letter icon" id="header-image-sizes"></li>
                 </a>
              </ul>
          </div>
@@ -93,12 +94,10 @@ li {display: inline;
         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"
             id="center-logo">
             <div class="text-align-center">  <!--Text box-->
-            <input type="blank" class="search-bar">
-            </div>
-            
-            <!--Buttons-->
-            <div class="text-align-center">
-            
+            <input type="blank" class="search-bar" placeholder=>
+            </div> 
+        
+            <div class="text-align-center">  
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
             </div>
