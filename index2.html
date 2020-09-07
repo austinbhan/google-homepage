@@ -46,6 +46,15 @@ li {display: inline;
 .body-container {position: relative;
                 padding-top: 200px;}
 
+.header-container {background-color: 0;
+                    position: relative;
+                    top: 0;
+                    width: 95%;
+                    display: inline;
+                    font-size: 15px;
+}
+
+
 .footer-container {background-color: #dbdbdb;
                     position: absolute;
                     bottom: 0;
@@ -54,15 +63,10 @@ li {display: inline;
                     font-size: 15px;         
 }
 
-.header-container {background-color: 0;
-                    position: absolute;
-                    top: 0;
-                    width: 95%;
-                    display: inline;
-                    font-size: 15px;
-}
-
-
+#header-image-sizes {height: 30px;
+                width: 30px;
+                position: relative;
+                top: 0;
 }
 </style>
 
@@ -77,8 +81,10 @@ li {display: inline;
                 <a style="float: right;">
                     <li><href target="blank">Gmail</href></li>
                     <li><href target="blank">Images</href></li>
-                    <li><!-- 3/3 grid --></li>
-                    <li><!-- Sign in Button --></li>
+                    <li><img src="/Users/austinhan/Desktop/the_odin_project/google-homepage/3x3icon.png"
+                        alt="3x3 grid icon" id="header-image-size"></li>
+                    <li><img src="/Users/austinhan/Desktop/the_odin_project/google-homepage/personal-icon.png" 
+                        alt="Personal letter icon" id="header-image-size"><!-- Sign in Button --></li>
                 </a>
              </ul>
          </div>
@@ -108,7 +114,7 @@ li {display: inline;
                 <li><href target="#blank">Business</href></li>
                 <li><href target="#blank">How Search works</href></li>
             </a>
-                <a style ="float: right;">
+            <a style ="float: right;">
                 <li><href target="#blank">Privacy</href></li>
                 <li><href target="#blank">Terms</href></li>
                 <li><href target="blank">Settings</href></li>
